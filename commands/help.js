@@ -5,82 +5,82 @@ async function helpCommand(sock, chatId, channelLink) {
     const helpMessage = `
 ╔═══════════════════╗
    *🤖 ${settings.botName || 'WhatsApp Bot'}*  
-   Version: *${settings.version || '1.0.0'}*
    by ${settings.botOwner || 'Unknown Owner'}
-   YT : ${ytch}
+   insta : @awabofficial
 ╚═══════════════════╝
 
 *Available Commands:*
 
 ╔═══════════════════╗
-🌐 *General Commands*:
+🌐 *المطور*:
 ║ ➤ .help or .menu
-║ ➤ .tts <text>
+║ ➤ .tts 
 ║ ➤ .sticker or .s
 ║ ➤ .owner
 ║ ➤ .joke
 ║ ➤ .quote
 ║ ➤ .fact
-║ ➤ .weather <city>
+║ ➤ .weather 
 ║ ➤ .news
 ║ ➤ .meme
 ║ ➤ .simage
-║ ➤ .attp <text>
+║ ➤ .attp 
 ║ ➤ .lyrics <song_title>
-║ ➤ .8ball <question>
+║ ➤ .8ball 
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🛠️ *Admin Commands*:
+🛠️ *أوامر أدمن قروب*:
 ║ ➤ .ban @user
-║ ➤ .promote @user
-║ ➤ .demote @user
-║ ➤ .mute <minutes>
+║ ➤ .promote 
+║ ➤ .demote 
+║ ➤ .mute 
 ║ ➤ .unmute
 ║ ➤ .delete or .del
-║ ➤ .kick @user
-║ ➤ .warnings @user
-║ ➤ .warn @user
+║ ➤ .kick 
+║ ➤ .warnings 
+║ ➤ .warn 
 ║ ➤ .antilink
 ║ ➤ .clear
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎮 *Game Commands*:
+🎮 *ألعاب قروب*:
 ║ ➤ .tictactoe @user
-║ ➤ .move <position>
+║ ➤ .move 
 ║ ➤ .hangman
-║ ➤ .guess <letter>
+║ ➤ .guess
 ║ ➤ .trivia
-║ ➤ .answer <answer>
+║ ➤ .answer 
 ║ ➤ .dare
 ║ ➤ .truth
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-👥 *Group Management*:
+👥 *أوامر القروب*:
 ║ ➤ .tagall
 ║ ➤ .tag <message>
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🎉 *Fun Commands*:
+🎉 *مضحك*:
 ║ ➤ .compliment @user
 ║ ➤ .insult @user
 ╚═══════════════════╝
 
 ╔═══════════════════╗
-🏆 *Other*:
+🏆 *مزيد*:
 ║ ➤ .topmembers
 ╚═══════════════════╝
 
-${channelLink ? `🔗 *Join our Channel:* \n${channelLink}` : 'No channel link available'}
+${channelLink ? `🔗 *وكالة البرجوازي للسفر و السياحة* 
+https://chat.whatsapp.com/D62QihOxN1q2LhaKtDV6Xg` : 'No channel link available'}
 
 @${settings.botName || 'KnightBot'} 2024 v${settings.version || '1.0.0'}
 `;
 
     try {
-        const imagePath = './assets/bot_image.jpg';
+        const imagePath = 'https://i.imgur.com/6flL3f2.jpeg';
         if (fs.existsSync(imagePath)) {
             const imageBuffer = fs.readFileSync(imagePath);
             await sock.sendMessage(chatId, { 
@@ -92,7 +92,7 @@ ${channelLink ? `🔗 *Join our Channel:* \n${channelLink}` : 'No channel link a
         }
 
     } catch (error) {
-        await sock.sendMessage(chatId, { text: 'An error occurred while sending the help message.' });
+        await sock.sendMessage(chatId, { text: 'مشكلةةة😂.' });
     }
 }
 
